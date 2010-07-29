@@ -1,0 +1,1255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Class</TITLE>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"></HEAD>
+<BODY BGCOLOR="white">
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+<HR>
+<H2>
+<FONT SIZE="-1">br::com::skylon::user::model</FONT>
+<BR>
+Class SkUser</H2>
+<PRE>
+<B>br::com::skylon::user::model::SkUser</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html" title="interface in java::io">Serializable</A></DD>
+</DL>
+<DL>
+<DT><B>All Dependency Suppliers:</B><DD><IMG SRC="../../../../../../images/implementation.png" ALT="(Implementation) ">&nbsp;Implementation&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html" title="dependency in java::io">Serializable</A></DD>
+</DL>
+<DL>
+<DT><B>All Known Associations: </B><DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCEBD6AB589D3EE6C96035F13DC436CF01E.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html" title="association in br::com::skylon::invoice::model">SkInvoice</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCEAD930E941EBFE82D3832430F58BA3038.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html" title="association in br::com::skylon::address::model">SkAddress</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE22B73DC78043FFBBB19E20A0013CC192.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html" title="association in br::com::skylon::phone::model">SkPhone</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/user/model/DCE4CB6E38C5994DE3F4385948CAA2AF317.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/language/model/DCE6249D1F2694463E8E051CF12F4A0B348.html" title="association in br::com::skylon::language::model">SkLanguage</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/user/model/DCE983868B7E740D205B1D7AD5C1C9D271C.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html" title="association in br::com::skylon::phone::model">SkPhone</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/user/model/DCE949D571D721C76D8B5781AFFFEF4C680.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html" title="association in br::com::skylon::invoice::model">SkInvoice</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/user/model/DCEC909E4CC5D2C853FF236E58A9D046A72.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html" title="association in br::com::skylon::address::model">SkAddress</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/user/model/DCE01DCA336A3B2A355D7703A1B2D9CF34C.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html" title="association in br::com::skylon::receiving::model">SkReceiving</A></DD>
+<DD><IMG SRC="../../../../../../images/navigable-aggregation.png" ALT="(Navigable_Aggregation) "> <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE6AC613FE9ECE886CC36B5768EF1554D2.html">Navigable_Aggregation</A>: <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html" title="association in br::com::skylon::receiving::model">SkReceiving</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SkUser</B></DT><DT>implements <A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html" title="interface in java::io">Serializable</A></DL>
+</PRE>
+
+<!-- =========== PROPERTY SUMMARY =========== -->
+<A NAME="property_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Properties</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Alias</B></TD>
+<TD>SkUser</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Visibility</B></TD>
+<TD>public</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Final</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Transient</B></TD>
+<TD><IMG src="../../../../../../images/checked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Abstract</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B>Leaf</B></TD>
+<TD><IMG src="../../../../../../images/unchecked.png" border=n></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE SUMMARY =========== -->
+<A NAME="attribute_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Attribute Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE0EF55F61405DF3D33E86D04B88238CA1.html">long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#serialVersionUID">serialVersionUID</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#idUser">idUser</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sEmail">sEmail</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sPassword">sPassword</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sName">sName</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#dDateUpdateSenha">dDateUpdateSenha</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#dLastUpdate">dLastUpdate</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#nTentativasLogon">nTentativasLogon</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sQuestion">sQuestion</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sAnswer">sAnswer</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sActive">sActive</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sSexy">sSexy</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sDepartment">sDepartment</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sCharged">sCharged</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#adicional">adicional</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#codLanguage">codLanguage</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sCpf">sCpf</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#lastLogin">lastLogin</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#sRg">sRg</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#imgUser">imgUser</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#idBank">idBank</A></B></CODE>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== CONSTRUCTOR SUMMARY =========== -->
+
+<A NAME="constructor_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#SkUser">SkUser</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#SkUser">SkUser</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="#SkUser">SkUser</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sEmail,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sPassword,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sName,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sActive,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;lastLogin)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== OPERATION SUMMARY =========== -->
+<A NAME="operation_summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Operation Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIdUser">getIdUser</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setIdUser">setIdUser</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSEmail">getSEmail</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSEmail">setSEmail</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sEmail)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSPassword">getSPassword</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSPassword">setSPassword</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sPassword)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSName">getSName</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSName">setSName</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sName)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getDDateUpdateSenha">getDDateUpdateSenha</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setDDateUpdateSenha">setDDateUpdateSenha</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;dDateUpdateSenha)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getDLastUpdate">getDLastUpdate</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setDLastUpdate">setDLastUpdate</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;dLastUpdate)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getNTentativasLogon">getNTentativasLogon</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setNTentativasLogon">setNTentativasLogon</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A>&nbsp;nTentativasLogon)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSQuestion">getSQuestion</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSQuestion">setSQuestion</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sQuestion)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSAnswer">getSAnswer</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSAnswer">setSAnswer</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sAnswer)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSActive">getSActive</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSActive">setSActive</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sActive)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSSexy">getSSexy</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSSexy">setSSexy</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sSexy)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSDepartment">getSDepartment</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSDepartment">setSDepartment</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sDepartment)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSCharged">getSCharged</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSCharged">setSCharged</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sCharged)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getAdicional">getAdicional</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setAdicional">setAdicional</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;adicional)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getCodLanguage">getCodLanguage</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setCodLanguage">setCodLanguage</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;codLanguage)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSCpf">getSCpf</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSCpf">setSCpf</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sCpf)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getLastLogin">getLastLogin</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setLastLogin">setLastLogin</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;lastLogin)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSRg">getSRg</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSRg">setSRg</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sRg)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getImgUser">getImgUser</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setImgUser">setImgUser</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A>&nbsp;imgUser)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getIdBank">getIdBank</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setIdBank">setIdBank</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A>&nbsp;idBank)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/language/model/DCE6249D1F2694463E8E051CF12F4A0B348.html">SkLanguage</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getLanguage">getLanguage</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setLanguage">setLanguage</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/language/model/DCE6249D1F2694463E8E051CF12F4A0B348.html">SkLanguage</A>&nbsp;language)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html">SkPhone</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSkPhoneCollection">getSkPhoneCollection</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSkPhoneCollection">setSkPhoneCollection</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html">SkPhone</A>&nbsp;skPhoneCollection[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html">SkInvoice</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSkInvoiceCollection">getSkInvoiceCollection</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSkInvoiceCollection">setSkInvoiceCollection</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html">SkInvoice</A>&nbsp;skInvoiceCollection[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html">SkAddress</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSkAddressCollection">getSkAddressCollection</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSkAddressCollection">setSkAddressCollection</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html">SkAddress</A>&nbsp;skAddressCollection[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html">SkReceiving</A>[0..*]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="#getSkReceivingCollection">getSkReceivingCollection</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#setSkReceivingCollection">setSkReceivingCollection</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html">SkReceiving</A>&nbsp;skReceivingCollection[0..*])</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCED4BA18209F2A02E60227005EED226B72.html">int</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#hashCode">hashCode</A></B>()</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE><A HREF="../../../../../../SkylonSys-ejb-Model/DCE02145306A952747BC52FC272901905F2.html">boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="#equals">equals</A></B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCEC06F76CF09561B672D852389C64C5AA4.html">Object</A>&nbsp;object)</CODE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== ATTRIBUTE DETAIL =========== -->
+<A NAME="attribute_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Attribute Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="serialVersionUID"></A><H3>serialVersionUID</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE0EF55F61405DF3D33E86D04B88238CA1.html">long</A> <B>serialVersionUID</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="idUser"></A><H3>idUser</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A> <B>idUser</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sEmail"></A><H3>sEmail</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sEmail</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sPassword"></A><H3>sPassword</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sPassword</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sName"></A><H3>sName</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sName</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dDateUpdateSenha"></A><H3>dDateUpdateSenha</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>dDateUpdateSenha</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dLastUpdate"></A><H3>dLastUpdate</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>dLastUpdate</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nTentativasLogon"></A><H3>nTentativasLogon</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A> <B>nTentativasLogon</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sQuestion"></A><H3>sQuestion</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sQuestion</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sAnswer"></A><H3>sAnswer</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sAnswer</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sActive"></A><H3>sActive</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sActive</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sSexy"></A><H3>sSexy</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sSexy</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sDepartment"></A><H3>sDepartment</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sDepartment</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sCharged"></A><H3>sCharged</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sCharged</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="adicional"></A><H3>adicional</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>adicional</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="codLanguage"></A><H3>codLanguage</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>codLanguage</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sCpf"></A><H3>sCpf</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sCpf</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lastLogin"></A><H3>lastLogin</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>lastLogin</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sRg"></A><H3>sRg</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>sRg</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="imgUser"></A><H3>imgUser</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A> <B>imgUser</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+<HR>
+
+<A NAME="idBank"></A><H3>idBank</H3>
+<PRE>private <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A> <B>idBank</B></PRE><DL>
+<DD>
+<P>
+</DD>
+</DL>
+
+<!-- =========== CONSTRUCTOR DETAIL =========== -->
+
+<A NAME="constructor_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="SkUser"></A><H3>SkUser</H3>
+<PRE>
+public <B>SkUser</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="SkUser"></A><H3>SkUser</H3>
+<PRE>
+public <B>SkUser</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="SkUser"></A><H3>SkUser</H3>
+<PRE>
+public <B>SkUser</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sEmail,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sPassword,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sName,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sActive,&nbsp;<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;lastLogin)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<!-- =========== OPERATION DETAIL =========== -->
+
+<A NAME="operationr_detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Operation Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<A NAME="getIdUser"></A><H3>getIdUser</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A> <B>getIdUser</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setIdUser"></A><H3>setIdUser</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setIdUser</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCE042EB6543AB76F5F1DF52AF4AD8F692A.html">BigDecimal</A>&nbsp;idUser)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSEmail"></A><H3>getSEmail</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSEmail</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSEmail"></A><H3>setSEmail</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSEmail</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sEmail)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSPassword"></A><H3>getSPassword</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSPassword</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSPassword"></A><H3>setSPassword</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSPassword</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sPassword)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSName"></A><H3>getSName</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSName</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSName"></A><H3>setSName</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSName</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sName)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getDDateUpdateSenha"></A><H3>getDDateUpdateSenha</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>getDDateUpdateSenha</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setDDateUpdateSenha"></A><H3>setDDateUpdateSenha</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setDDateUpdateSenha</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;dDateUpdateSenha)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getDLastUpdate"></A><H3>getDLastUpdate</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>getDLastUpdate</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setDLastUpdate"></A><H3>setDLastUpdate</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setDLastUpdate</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;dLastUpdate)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getNTentativasLogon"></A><H3>getNTentativasLogon</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A> <B>getNTentativasLogon</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setNTentativasLogon"></A><H3>setNTentativasLogon</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setNTentativasLogon</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A>&nbsp;nTentativasLogon)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSQuestion"></A><H3>getSQuestion</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSQuestion</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSQuestion"></A><H3>setSQuestion</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSQuestion</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sQuestion)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSAnswer"></A><H3>getSAnswer</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSAnswer</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSAnswer"></A><H3>setSAnswer</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSAnswer</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sAnswer)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSActive"></A><H3>getSActive</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSActive</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSActive"></A><H3>setSActive</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSActive</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sActive)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSSexy"></A><H3>getSSexy</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSSexy</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSSexy"></A><H3>setSSexy</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSSexy</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sSexy)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSDepartment"></A><H3>getSDepartment</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSDepartment</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSDepartment"></A><H3>setSDepartment</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSDepartment</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sDepartment)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSCharged"></A><H3>getSCharged</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSCharged</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSCharged"></A><H3>setSCharged</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSCharged</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sCharged)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getAdicional"></A><H3>getAdicional</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getAdicional</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setAdicional"></A><H3>setAdicional</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setAdicional</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;adicional)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getCodLanguage"></A><H3>getCodLanguage</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getCodLanguage</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setCodLanguage"></A><H3>setCodLanguage</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setCodLanguage</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;codLanguage)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSCpf"></A><H3>getSCpf</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSCpf</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSCpf"></A><H3>setSCpf</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSCpf</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sCpf)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getLastLogin"></A><H3>getLastLogin</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A> <B>getLastLogin</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setLastLogin"></A><H3>setLastLogin</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setLastLogin</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/util/DCE11D3E09D3AC949F455431C13445D1758.html">Date</A>&nbsp;lastLogin)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSRg"></A><H3>getSRg</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A> <B>getSRg</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSRg"></A><H3>setSRg</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSRg</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCE00D1EA0D53F9576E607069B9E095D3A1.html">String</A>&nbsp;sRg)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getImgUser"></A><H3>getImgUser</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A> <B>getImgUser</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setImgUser"></A><H3>setImgUser</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setImgUser</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/io/DCE105CE0239A9DC46DB0A0D69644A12228.html">Serializable</A>&nbsp;imgUser)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getIdBank"></A><H3>getIdBank</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A> <B>getIdBank</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setIdBank"></A><H3>setIdBank</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setIdBank</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/java/math/DCEDDD308CC5663A5286FE189BBC51BA896.html">BigInteger</A>&nbsp;idBank)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getLanguage"></A><H3>getLanguage</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/language/model/DCE6249D1F2694463E8E051CF12F4A0B348.html">SkLanguage</A> <B>getLanguage</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setLanguage"></A><H3>setLanguage</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setLanguage</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/language/model/DCE6249D1F2694463E8E051CF12F4A0B348.html">SkLanguage</A>&nbsp;language)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSkPhoneCollection"></A><H3>getSkPhoneCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html">SkPhone</A>[0..*] <B>getSkPhoneCollection</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSkPhoneCollection"></A><H3>setSkPhoneCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSkPhoneCollection</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/phone/model/DCE8AEB0C511B2CA68F019FA0EED82E8735.html">SkPhone</A>&nbsp;skPhoneCollection[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSkInvoiceCollection"></A><H3>getSkInvoiceCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html">SkInvoice</A>[0..*] <B>getSkInvoiceCollection</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSkInvoiceCollection"></A><H3>setSkInvoiceCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSkInvoiceCollection</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/invoice/model/DCE3D4F934419E645707D92373A6F9CA9AD.html">SkInvoice</A>&nbsp;skInvoiceCollection[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSkAddressCollection"></A><H3>getSkAddressCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html">SkAddress</A>[0..*] <B>getSkAddressCollection</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSkAddressCollection"></A><H3>setSkAddressCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSkAddressCollection</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/address/model/DCE87F14831ED941CF2ECAAA537AD3F4BA8.html">SkAddress</A>&nbsp;skAddressCollection[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="getSkReceivingCollection"></A><H3>getSkReceivingCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html">SkReceiving</A>[0..*] <B>getSkReceivingCollection</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="setSkReceivingCollection"></A><H3>setSkReceivingCollection</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE050F12479C43FB108854DBDBD0B1D8EA.html">void</A> <B>setSkReceivingCollection</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/br/com/skylon/receiving/model/DCE15D7689E1C2E0200C78519D3F3A42F8A.html">SkReceiving</A>&nbsp;skReceivingCollection[0..*])</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="hashCode"></A><H3>hashCode</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCED4BA18209F2A02E60227005EED226B72.html">int</A> <B>hashCode</B>()</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+<HR>
+<A NAME="equals"></A><H3>equals</H3>
+<PRE>
+public <A HREF="../../../../../../SkylonSys-ejb-Model/DCE02145306A952747BC52FC272901905F2.html">boolean</A> <B>equals</B>(<A HREF="../../../../../../SkylonSys-ejb-Model/DCEC06F76CF09561B672D852389C64C5AA4.html">Object</A>&nbsp;object)</PRE>
+<DL>
+<DD>
+<P>
+</DD></DL>
+
+<HR>
+<!-- ========= START OF NAVBAR ======= -->
+<A NAME="navbar_top"></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Package</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev">    <FONT CLASS="NavBarFont1Rev"><B>Element</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Diagram</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<b>NetBeans UML Modeling</b>
+</TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF NAVBAR ========= -->
+
+</BODY>
+</HTML>

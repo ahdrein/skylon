@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+
+    <ui:param name="resourceBundle" value="br.com.skylon.address.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['address.title']}" />
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <f:view>
+            <h:panelGrid columns="2" style="margin-top: 3px">
+
+                <h:outputText value="#{msg['address.label.id']}"/>
+                <h:outputText value="#{skAddress.skAddress.idAddress}" title="IdAddress" />
+
+                <h:outputText value="#{msg['address.label.SCep']}"/>
+                <h:inputText id="SCep" value="#{skAddress.skAddress.SCep}" title="SCep" />
+
+                <h:outputText value="#{msg['address.label.SType']}"/>
+                <h:inputText id="SType" value="#{skAddress.skAddress.SType}" title="SType" />
+
+                <h:outputText value="#{msg['address.label.SAddress']}"/>
+                <h:inputText id="SAddress" value="#{skAddress.skAddress.SAddress}" title="SAddress" />
+
+                <h:outputText value="#{msg['address.label.SBairro']}"/>
+                <h:inputText id="SBairro" value="#{skAddress.skAddress.SBairro}" title="SBairro" />
+
+                <h:outputText value="#{msg['address.label.NNumber']}"/>
+                <h:inputText id="NNumber" value="#{skAddress.skAddress.NNumber}" title="NNumber" />
+
+            </h:panelGrid>
+        </f:view>
+        
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['address.button.save']}" action="#{address.save}"></h:commandButton>
+        <h:commandButton value="#{msg['address.button.cancel']}" action="#{address.find}"></h:commandButton>
+    </ui:define>
+</ui:composition>    

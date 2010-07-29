@@ -1,0 +1,116 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+   
+    <h:panelGrid columns="1" width="100%" columnClasses="tpanels,tpanels,tpanels">
+        <a4j:region id="a4jMenu">
+            <!--<rich:simpleTogglePanel switchType="ajax" label="menu" height="100%">-->
+                <!--
+                <a4j:commandLink action="#{products.changeName1}" value="link" reRender="text" />
+                <br />
+                <a4j:commandLink id="cLink" action="#{products.changeName2}" value="Click it To send ajax" reRender="text" />
+                <br />
+                <h:commandLink id="link-product" action="product-edit" value="product-edit" actionListener="#{product.actionDeselect}" immediate="true"/>
+                <br />
+                -->
+<!--                
+                <h:commandLink id="link-product" action="product-find" value="Produto" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="category-find" value="Categoria" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="invoice-find" value="Invoice" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="payment-find" value="Payment" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="receiving-find" value="Receiving" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="user-find" value="User" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="bank-find" value="Bank" immediate="true"/>
+                <br />
+                <h:commandLink id="link-product" action="login" value="Login" immediate="true"/>
+<c:if test="${!empty loggedUser}"></c:if> 
+
+-->
+
+                <h:panelGrid columns="2" columnClasses="cols" width="100%">
+                    <rich:panelMenu style="width:180px"  mode="ajax"
+                        iconExpandedGroup="disc" iconCollapsedGroup="disc" 
+                        iconExpandedTopGroup="chevronUp" iconGroupTopPosition="right" 
+                        iconCollapsedTopGroup="chevronDown" iconCollapsedTopPosition="right" >
+                        <rich:panelMenuGroup label="Cadastro">
+                            <rich:panelMenuItem label="Produto" action="product-find">
+                                <f:param name="current" value="Produto"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Category" action="category-find">
+                                <f:param name="current" value="Category"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Bank" action="bank-find">
+                                <f:param name="current" value="Bank"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Invoice" action="invoice-find">
+                                <f:param name="current" value="Invoice"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Payments" action="payment-find">
+                                <f:param name="current" value="Payment"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Receiving" action="receiving-find">
+                                <f:param name="current" value="Invoice"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="User" action="user-find">
+                                <f:param name="current" value="User"/>
+                            </rich:panelMenuItem>
+                       
+                        </rich:panelMenuGroup>
+                        
+                        <c:if test="#{loggedUser != null}">
+                            <rich:panelMenuGroup label="Pessoal">
+                                <rich:panelMenuItem label="Meu Carrinho" action="cart-list">
+                                    <f:param name="current" value="Meu Carrinho"/>
+                                </rich:panelMenuItem>
+                                <rich:panelMenuItem   label="Item 2.2" action="#{panelMenu.updateCurrent}">
+                                    <f:param name="current" value="Item 2.2"/>
+                                </rich:panelMenuItem>
+                                <rich:panelMenuItem label="Item 2.3" action="#{panelMenu.updateCurrent}">
+                                    <f:param name="current" value="Item 2.3"/>
+                                </rich:panelMenuItem>
+                                <rich:panelMenuGroup label="Group 2.4">
+                                    <rich:panelMenuItem label="Item 2.4.1" action="#{panelMenu.updateCurrent}">
+                                        <f:param name="current" value="Item 2.4.1"/>
+                                    </rich:panelMenuItem>
+                                    <rich:panelMenuItem label="Item 2.4.2" action="#{panelMenu.updateCurrent}">
+                                        <f:param name="current" value="Item 2.4.2"/>
+                                    </rich:panelMenuItem>
+                                    <rich:panelMenuItem label="Item 2.4.3" action="#{panelMenu.updateCurrent}">
+                                        <f:param name="current" value="Item 2.4.3"/>
+                                    </rich:panelMenuItem>
+                                </rich:panelMenuGroup>
+                                <rich:panelMenuItem label="Item 2.5" action="#{panelMenu.updateCurrent}">
+                                        <f:param name="current" value="Item 2.5"/>
+                                </rich:panelMenuItem>
+                            </rich:panelMenuGroup>
+                        </c:if>
+                        
+                        <rich:panelMenuGroup label="Group 3">
+                            <rich:panelMenuItem label="Item 3.1" action="#{panelMenu.updateCurrent}">
+                                    <f:param name="current" value="Item 3.1"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Item 3.2" action="#{panelMenu.updateCurrent}">
+                                    <f:param name="current" value="Item 3.2"/>
+                            </rich:panelMenuItem>
+                            <rich:panelMenuItem label="Item 3.3" action="#{panelMenu.updateCurrent}">
+                                    <f:param name="current" value="Item 3.3"/>
+                            </rich:panelMenuItem>
+                        </rich:panelMenuGroup>
+                    </rich:panelMenu>
+                </h:panelGrid>
+                
+            <!--</rich:simpleTogglePanel>-->
+        </a4j:region>
+    </h:panelGrid>
+
+</ui:composition>

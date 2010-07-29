@@ -1,0 +1,66 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+        
+    <ui:param name="resourceBundle" value="br.com.skylon.product.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['product.title']}" />
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <f:view>
+            <h:panelGrid columns="2" style="margin-top: 3px">
+
+            <h:outputText value="#{msg['product.label.id']}: " />
+            <h:outputLabel id="id" value="#{products.product.idProduct}" size="20" disabled="true"/>
+            
+            <h:outputLabel id="detail" value="#{msg['product.label.sDescCurtaProd']}: " />
+            <h:inputText id="sDescCurtaProd" value="#{products.product.SDescCurtaProd}" size="20" required="true" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lsDescLongaProd" value="#{msg['product.label.sDescLongaProd']}: " />
+            <h:inputText id="sDescLongaProd" value="#{products.product.SDescLongaProd}" size="20" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lsDetalh" value="#{msg['product.label.sDetalhe']}: " />
+            <h:inputText id="sDetalhe" value="#{products.product.SDetalhe}" size="20" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lnQtdeEstoque" value="#{msg['product.label.nQtdeEstoque']}: " />
+            <h:inputText id="nQtdeEstoque" value="#{products.product.NQtdeEstoque}" size="20" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lnVlrCusto" value="#{msg['product.label.nVlrCusto']}: " />
+            <h:inputText id="nVlrCusto" value="#{products.product.NVlrCusto}" size="20" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lnVlrVenda" value="#{msg['product.label.nVlrVenda']}: " />
+            <h:inputText id="nVlrVenda" value="#{products.product.NVlrVenda}" size="20" disabled="#{products.neditable}"/>
+            
+            <h:outputLabel id="lnWeight" value="#{msg['product.label.nWeight']}: " />
+            <h:inputText id="nWeight" value="#{products.product.NWeight}" size="20" disabled="#{products.neditable}"/>
+            
+            <!--<h:outputText id="limgProd" value="ImgProd:"/>
+            <h:inputText id="imgProd" value="#{product.product.imgProd}" title="ImgProd" />-->
+
+            <!--
+            <h:outputText value="SkItemInvoiceCollection:"/>
+                <h:selectManyListbox id="skItemInvoiceCollection" value="#{skProduct.skItemInvoiceCollectionOfSkProduct}" title="SkItemInvoiceCollection" size="6" >
+                <f:selectItems value="#{skItemInvoice.skItemInvoicesAvailableSelectMany}"/>
+            </h:selectManyListbox>
+            
+            <h:outputText value="IdCategory:"/>
+                <h:selectOneMenu id="idCategory" value="#{skProduct.skProduct.idCategory}" title="IdCategory" >
+                <f:selectItems value="#{skCategory.skCategorysAvailableSelectOne}"/>
+            </h:selectOneMenu>
+            -->
+
+            </h:panelGrid>
+        </f:view>
+        
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['product.button.save']}" action="#{products.save}"></h:commandButton>
+        <h:commandButton value="#{msg['product.button.cancel']}" action="#{products.find}"></h:commandButton>
+    </ui:define>
+</ui:composition>    

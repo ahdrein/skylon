@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="pages/receiving/receiving-edit.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="index.jsp" x="400" y="150" zoom="true"/>
+        <Node id="pages/cart/cart-list.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="pages/address/address-edit.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="pages/user/user-edit.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="pages/product/product-edit.xhtml" x="581" y="439" zoom="true"/>
+        <Node id="pages/bank/bank-edit.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="pages/bank/bank-find.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="pages/category/category-edit.xhtml" x="1400" y="300" zoom="true"/>
+        <Node id="pages/second.jsp" x="400" y="300" zoom="true"/>
+        <Node id="pages/box-shadow.xhtml" x="277" y="578" zoom="true"/>
+        <Node id="templates/page-template.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="pages/cart/cart-confirm.xhtml" x="400" y="750" zoom="true"/>
+        <Node id="pages/cart/cart-find.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="pages/user/user-find.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="pages/payment/payment-find.xhtml" x="650" y="750" zoom="true"/>
+        <Node id="pages/product/product-find.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="pages/category/category-find.xhtml" x="1650" y="150" zoom="true"/>
+        <Node id="pages/payment/payment-edit.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="templates/page-menu.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="login.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="pages/cart/cart-edit.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="pages/cart/cart-store.xhtml" x="650" y="600" zoom="true"/>
+        <Node id="pages/receiving/receiving-find.xhtml" x="900" y="600" zoom="true"/>
+        <Node id="pages/invoice/invoice-find.xhtml" x="540" y="576" zoom="true"/>
+        <Node id="pages/invoice/invoice-edit.xhtml" x="150" y="900" zoom="true"/>
+        <Node id="pages/cart/cart-info.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="pages/address/address-find.xhtml" x="323" y="747" zoom="false"/>
+        <Node id="index.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="pages/first.jsp" x="73" y="578" zoom="true"/>
+        <Node id="templates/page-footer.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="templates/page-header.xhtml" x="299" y="442" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
