@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>SkylonSys</display-name>
+    
+    
+    <!-- richfaces -->
+    <context-param>
+	<param-name>org.richfaces.SKIN</param-name>
+	<param-value>blueSky</param-value>
+    </context-param>
+    
+    <filter>
+        <display-name>RichFaces Filter</display-name>
+        <filter-name>richfaces</filter-name>
+        <filter-class>org.ajax4jsf.Filter</filter-class>
+    </filter>
+
+    <filter-mapping>
+	<filter-name>richfaces</filter-name>
+	<servlet-name>Faces Servlet</servlet-name>
+	<dispatcher>REQUEST</dispatcher>
+	<dispatcher>FORWARD</dispatcher>
+	<dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+    
+    <listener>
+	<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+    </listener>
+    
+    <!-- Faces Servlet -->
+    <servlet>
+	<servlet-name>Faces Servlet</servlet-name>
+	<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+	<load-on-startup>1</load-on-startup>
+    </servlet>
+<!--
+    <filter-mapping>
+        <filter-name>richfaces</filter-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </filter-mapping>-->
+    
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>javax.faces.DEFAULT_SUFFIX</param-name>
+        <param-value>.xhtml</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>org.ajax4jsf.VIEW_HANDLERS</param-name>
+        <param-value>com.sun.facelets.FaceletViewHandler</param-value>
+    </context-param>
+  
+    <context-param>
+            <param-name>facelets.VIEW_MAPPINGS</param-name>
+            <param-value>*.xhtml; *.jsp; *.jsf; *.jspx</param-value>
+<!--
+        Context initialization parameter for defining what viewIds
+        should be handled by Facelets, and what should not. When
+        left unset, all URLs will be handled by Facelets. When set,
+        it must be a semicolon separated list of either extension
+        mappings or prefix mappings.
+-->
+    </context-param>    
+    
+    <context-param>
+        <param-name>facelets.DEVELOPMENT</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    
+    <context-param>
+            <param-name>facelets.REFRESH_PERIOD</param-name>
+            <param-value>2</param-value>
+    </context-param>    
+  
+    <!-- CUSTOM -->
+    <context-param>  
+        <param-name>javax.faces.CONFIG_FILES</param-name>  
+        <param-value>  
+            /WEB-INF/navigation-rules.xml
+        </param-value>  
+    </context-param>  
+    
+   <context-param>
+        <param-name>com.sun.faces.verifyObjects</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>com.sun.faces.validateXml</param-name>
+        <param-value>false</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>client</param-value>
+    </context-param>
+    
+    <!-- MIME mapping -->
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+    
+    <mime-mapping>
+        <extension>txt</extension>
+        <mime-type>text/plain</mime-type>
+    </mime-mapping>
+    
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+    
+    <!--<security-constraint>
+        <display-name>
+            Prevent access to raw JSP pages that are for JSF pages.
+        </display-name>
+        <web-resource-collection>
+            <web-resource-name>Raw-JSF-JSP-Pages</web-resource-name>
+            <url-pattern>/pages/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>No roles, so no direct access</description>
+        </auth-constraint>
+    </security-constraint>-->
+</web-app>

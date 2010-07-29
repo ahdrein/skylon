@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+
+    <ui:param name="resourceBundle" value="br.com.skylon.product.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['product.title']}" />
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <f:view>
+            <h:panelGrid columns="2" style="margin-top: 3px">
+                
+                <h:outputLabel value="#{msg['invoice.label.id']}"/>
+                <h:outputLabel value="#{invoice.idInvoice}" title="IdInvoice" />
+                
+                <h:outputLabel value="#{msg['invoice.label.IdPayment']}"/>
+                    <h:selectOneMenu id="idPayment" value="#{invoice.idPayment}" title="#{msg['invoice.label.IdPayment']}" >
+                    <f:selectItems value="#{payment.all}"/>
+                </h:selectOneMenu>
+                
+                <h:inputText id="idPayment" value="#{invoice.idPayment}" title="#{msg['invoice.label.IdPayment']}" required="true" requiredMessage="The idPayment field is required." />
+                
+                <!--
+                <br />
+                <h:commandLink action="#{skInvoice.edit}" value="Save">
+                <f:param name="jsfcrud.currentSkInvoice" value="#{skInvoice.asString[skInvoice.skInvoice]}"/>
+                </h:commandLink>
+                <br />
+                <br />
+                <h:commandLink action="#{skInvoice.detailSetup}" value="Show" immediate="true">
+                <f:param name="jsfcrud.currentSkInvoice" value="#{skInvoice.asString[skInvoice.skInvoice]}"/>
+                </h:commandLink>
+                <br />
+                <h:commandLink action="#{skInvoice.listSetup}" value="Show All SkInvoice Items" immediate="true"/>
+                <br />
+                -->
+           
+                
+            </h:panelGrid>
+        </f:view>
+        
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['product.button.save']}" action="#{products.save}"></h:commandButton>
+        <h:commandButton value="#{msg['product.button.cancel']}" action="#{products.find}"></h:commandButton>
+    </ui:define>
+</ui:composition>    

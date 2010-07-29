@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+                                "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">                              
+<faces-config xmlns="http://java.sun.com/JSF/Configuration">
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>product-find</from-outcome>
+            <to-view-id>/pages/product/product-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>product-edit</from-outcome>
+            <to-view-id>/pages/product/product-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>address-find</from-outcome>
+            <to-view-id>/pages/address/address-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>address-edit</from-outcome>
+            <to-view-id>/pages/address/adress-edit.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>bank-find</from-outcome>
+            <to-view-id>/pages/bank/bank-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>bank-edit</from-outcome>
+            <to-view-id>/pages/bank/bank-edit.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>category-find</from-outcome>
+            <to-view-id>/pages/category/category-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>category-edit</from-outcome>
+            <to-view-id>/pages/category/category-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>invoice-find</from-outcome>
+            <to-view-id>/pages/invoice/invoice-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>invoice-edit</from-outcome>
+            <to-view-id>/pages/invoice/invoice-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>payment-find</from-outcome>
+            <to-view-id>/pages/payment/payment-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>payment-edit</from-outcome>
+            <to-view-id>/pages/payment/payment-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>receiving-find</from-outcome>
+            <to-view-id>/pages/receiving/receiving-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>receiving-edit</from-outcome>
+            <to-view-id>/pages/receiving/receiving-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>user-find</from-outcome>
+            <to-view-id>/pages/user/user-find.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>user-edit</from-outcome>
+            <to-view-id>/pages/user/user-edit.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>cart-find</from-outcome>
+            <to-view-id>/pages/cart/cart-find.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>cart-edit</from-outcome>
+            <to-view-id>/pages/cart/cart-edit.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>cart-info</from-outcome>
+            <to-view-id>/pages/cart/cart-info.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>cart-confirm</from-outcome>
+            <to-view-id>/pages/cart/cart-confirm.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>cart-list</from-outcome>
+            <to-view-id>/pages/cart/cart-list.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>login</from-outcome>
+            <to-view-id>/login.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        
+    </navigation-rule>        
+</faces-config>

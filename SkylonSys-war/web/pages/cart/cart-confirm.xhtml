@@ -1,0 +1,40 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+
+    <ui:param name="resourceBundle" value="br.com.skylon.cart.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['cart.title']}" />    
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <a4j:region>
+            <rich:panel >
+
+                <f:facet name="header">
+                    <h:outputText value="Leia estes conselhos para realizar uma negociação segura"/>
+                </f:facet>
+                <h:panelGrid columns="1" style="margin-top: 3px">
+
+                    <h:outputText value="Lembre que sua compra estará assegurada pelo Programa de Proteção ao Comprador somente se cumprir com todos os requisitos para uma compra segura (Ver requisitos)." />
+                    <h:outputText value="Se decidir fazer um depósito bancário, assegure-se que o nome do titular da conta bancária, coincide com os dados do vendedor enviados pelo Skylon Sys." />
+                    <h:outputText value="Passos para concretizar a negociação:" />
+                    <br />
+                    <h:outputText value="1- Procure entrar em contato como vendedor, através de telefone fixo (e não celular)." />
+                    <h:outputText value="2- Utilize-se de bom senso para planejar com sua contraparte a transação." />
+                    <h:outputText value="3- Depois da negociação, não esqueça de qualificar sua contraparte." />
+
+                </h:panelGrid>
+            </rich:panel>
+        </a4j:region>
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['cart.button.save']}" action="#{cart.save}"></h:commandButton>
+        <h:commandButton value="#{msg['cart.button.cancel']}" action="#{cart.find}"></h:commandButton>
+    </ui:define>
+</ui:composition>

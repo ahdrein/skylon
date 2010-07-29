@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+                            "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+<faces-config>
+    <application>
+        <message-bundle>messages</message-bundle>
+        <locale-config>
+            <default-locale>pt_BR</default-locale>
+            <supported-locale>en_US</supported-locale>            
+        </locale-config>
+        <!--<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>-->
+    </application>
+    
+    <managed-bean>
+	<managed-bean-name>products</managed-bean-name>
+	<managed-bean-class>br.com.skylon.product.controller.SkProductController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>login</managed-bean-name>
+	<managed-bean-class>br.com.skylon.login.controller.LoginController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+	<managed-bean-name>user</managed-bean-name>
+	<managed-bean-class>br.com.skylon.user.controller.SkUserController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+	<managed-bean-name>bank</managed-bean-name>
+	<managed-bean-class>br.com.skylon.bank.controller.SkBankController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>category</managed-bean-name>
+	<managed-bean-class>br.com.skylon.category.controller.SkCategoryController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>invoice</managed-bean-name>
+	<managed-bean-class>br.com.skylon.invoice.controller.SkInvoiceController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>itemInvoice</managed-bean-name>
+	<managed-bean-class>br.com.skylon.invoice.controller.SkItemInvoiceController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>payment</managed-bean-name>
+	<managed-bean-class>br.com.skylon.payment.controller.SkPaymentController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>receiving</managed-bean-name>
+	<managed-bean-class>br.com.skylon.receiving.controller.SkReceivingController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>phone</managed-bean-name>
+	<managed-bean-class>br.com.skylon.phone.controller.SkPhoneController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>address</managed-bean-name>
+	<managed-bean-class>br.com.skylon.address.controller.SkAddressController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>cep</managed-bean-name>
+	<managed-bean-class>br.com.skylon.cep.controller.SkCepController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+	<managed-bean-name>language</managed-bean-name>
+	<managed-bean-class>br.com.skylon.language.controller.SkLanguageController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <managed-bean>
+	<managed-bean-name>cart</managed-bean-name>
+	<managed-bean-class>br.com.skylon.cart.controller.SkCartController</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>    
+
+ 
+</faces-config>

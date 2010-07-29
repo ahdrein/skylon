@@ -1,0 +1,127 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+
+    <ui:param name="resourceBundle" value="br.com.skylon.category.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['category.title']}" />
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <a4j:region>
+            <h:panelGrid columns="2" style="margin-top: 3px" width="100%">
+                <h:panelGrid columns="2" style="margin-top: 3px" columnClasses="width100, fake">
+                    <h:outputText id="detail" value="#{msg['category.label.sDescCategory']}" style="font-weight:bold; text-align:left"/>
+                    <h:inputText id="id" value="#{category.findDescCategory}" size="30"/>
+                </h:panelGrid>
+                <br />
+                <h:commandButton id="btSearch" value="#{msg['category.button.find']}" action="#{category.find}" inlineStyle="margin-bottom: 30px" />
+                <br />
+                <h:panelGrid columns="1" style="margin-top: 3px" width="100%">
+                    <rich:datascroller for="categoryList" maxPages="20" 
+                                       page="20" reRender="sc2" id="sc1" width="100%"></rich:datascroller>
+                    <rich:spacer width="30" />
+                    <rich:dataTable value="#{category.resultList}" var="tableCategory" id="categoryList" 
+                        onRowMouseOver="this.style.backgroundColor='#F1F1F1'"
+                        onRowMouseOut="this.style.backgroundColor='#{a4jSkin.tableBackgroundColor}'"
+                        cellpadding="0" cellspacing="0" 
+                        width="100%" border="0" rows="10">
+                        <rich:column width="15">
+                            <f:facet name="header">
+                                <h:outputText value="" />
+                            </f:facet>
+                            
+                            <h:commandLink id="confirmar" immediate="true" actionListener="#{category.processAction}" >
+                                <f:param id="itemId" name="id" value="#{tableCategory.idCategory}" />
+                                <h:selectOneRadio id="radio">
+                                    <f:selectItem itemLabel="" itemValue="#{tableCategory.idCategory}" />
+                                </h:selectOneRadio>
+                            </h:commandLink>
+                        </rich:column>
+
+                        <rich:column width="100">
+                            <f:facet name="header">
+                                <h:outputText value="Id" />
+                            </f:facet>
+                            <h:outputText value="#{tableCategory.idCategory}" />
+                        </rich:column>
+
+                        <rich:column>
+                            <f:facet name="header">
+                                <h:outputText value="nome" />
+                            </f:facet>
+                            <h:outputText value="#{tableCategory.SDescCategory}" />
+                        </rich:column>
+                        
+                        <rich:column>
+                            <f:facet name="header">
+                                <h:outputText value="Descrição" />
+                            </f:facet>
+                            <h:outputText value="#{tableCategory.SDescCategory}" />
+                        </rich:column>
+
+
+                        <!--
+                        <f:facet name="headerCategoryList">
+                            <rich:columnGroup>
+                                <rich:column> 
+                                    <h:outputText styleClass="headerText" value="#{msg['category.label.SDescCategory']}" />
+                                </rich:column>
+                                <rich:column>
+                                    <h:outputText styleClass="headerText" value="#{msg['category.label.Select']}" />
+                                </rich:column>
+                            </rich:columnGroup>
+                        </f:facet>
+                        -->
+                        <!--
+                        <rich:column width="100">
+                            <f:facet name="header">
+                                <h:outputText value="Id" />
+                            </f:facet>
+                            -->
+                            <!--<h:outputText value="#{rich:clientId(1)}" />-->
+                            <!--<h:commandLink value="rrr" action="#{rich:clientId(1)}" />-->
+                            
+                            <!--
+                            <h:commandLink value="#{tableCategory.idCategory}">
+                                <f:actionListener type="br.com.skylon.category.controller.SkCategoryController"/>
+
+                                <h:outputText value="Order" />
+                            </h:commandLink>
+                        </rich:column>
+                        -->
+                        
+
+                        <!--
+                        <rich:column width="16px">
+                            <f:facet name="header">
+                                <h:outputText value="Info" />
+                            </f:facet>
+                            
+                            <h:commandLink value="info">
+                                <a4j:support event="onclick" action="#{category.actionSelect}" />
+                            </h:commandLink>
+                        </rich:column>
+                        -->
+                       
+                    </rich:dataTable>
+                    <rich:datascroller for="categoryList" maxPages="20"
+                        page="10" id="sc2" reRender="sc1" />
+                </h:panelGrid>
+
+            </h:panelGrid>
+        </a4j:region>
+        
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['category.button.new_item']}" action="#{category.add}" />
+        <h:commandButton value="#{msg['category.button.edit_item']}" action="#{category.edit}"  />
+        <h:commandButton value="#{msg['category.button.view']}" action="#{category.view}" />
+        <h:commandButton value="#{msg['category.button.remove_item']}" action="#{category.remove}" />
+    </ui:define>
+</ui:composition>    

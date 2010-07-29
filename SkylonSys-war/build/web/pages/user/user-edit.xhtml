@@ -1,0 +1,170 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      template="/templates/page-template.xhtml">
+    
+    <ui:param name="resourceBundle" value="br.com.skylon.user.resource.labels" />
+    <ui:param name="labelPage" value="#{msg['user.title']}" />
+          
+    <ui:define name="body">
+        <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+        <f:view>
+            <h:form>
+                <h:panelGrid columns="2" style="margin-top: 3px">
+
+                    <h:outputText value="#{msg['user.label.id']}" />
+                    <h:outputText value="#{user.user.idUser}" title="#{msg['user.label.id']}" />
+
+                    <h:outputText value="#{msg['user.label.sName']}"/>
+                    <h:inputText id="SName" value="#{user.user.SName}" title="#{msg['user.label.sName']}" required="true" requiredMessage="The SName field is required." disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sEmail']}"/>
+                    <!--<h:inputText id="SEmail" value="#{user.user.SEmail}" validator="#{user.validateEmail}" title="#{msg['user.label.sEmail']}" required="true" requiredMessage="The SEmail field is required." size="25" maxlength="125" />-->
+                    <h:inputText id="SEmail" value="#{user.user.SEmail}" title="#{msg['user.label.sEmail']}" required="true" requiredMessage="The SEmail field is required." size="25" maxlength="125" disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sPassword']}"/>
+                    <!--<h:inputText id="SPassword" value="#{user.user.SPassword}" title="#{msg['user.label.sPassword']}" required="true" requiredMessage="The SPassword field is required." />-->
+                    <h:inputSecret id="SPassword" value="#{user.user.SPassword}" size="20" maxlength="20" redisplay="false" required="true" requiredMessage="The SPassword field is required." disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sConfPassword']}"/>
+                    <h:inputSecret id="SPassword" value="#{user.confirmationPass}" size="20" maxlength="20" redisplay="false" required="true" requiredMessage="The SPassword field is required." disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sQuestion']}"/>
+                    <h:inputText id="SQuestion" value="#{user.user.SQuestion}" title="#{msg['user.label.sQuestion']}" size="50" disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sAnswer']}"/>
+                    <h:inputText id="SAnswer" value="#{user.user.SAnswer}" title="#{msg['user.label.sAnswer']}" size="50" disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sActive']}"/>
+                    <h:selectOneMenu value="#{user.user.SActive}">
+                        <a4j:support event="onchange" reRender="SActive"/>
+                        <f:selectItem itemLabel="Ativo" itemValue="S"/>
+                        <f:selectItem itemLabel="Inativo" itemValue="N"/>
+                    </h:selectOneMenu>
+
+                    <h:outputText value="#{msg['user.label.sSexy']}"/>
+                    <h:selectOneMenu value="#{user.user.SSexy}">
+                        <a4j:support event="onchange" reRender="SSexy"/>
+                        <f:selectItem itemLabel="Masculino" itemValue="M"/>
+                        <f:selectItem itemLabel="Feminino" itemValue="F"/>
+                    </h:selectOneMenu>
+
+                    <h:outputText value="#{msg['user.label.codLanguage']}"/>
+                    <rich:comboBox suggestionValues="#{user.allLanguage}"
+                                    directInputSuggestions="true" defaultLabel="Enter some value" 
+                                    value="#{user.descricaoLanguage}" onselect="user.language()" />
+
+                    <h:outputText value="#{msg['user.label.sDepartment']}" for="SDepartment"/>
+                    <h:inputText id="SDepartment" value="#{user.user.SDepartment}" title="#{msg['user.label.sDepartment']}" disabled="#{user.neditable}"/>
+
+                    <!--<h:outputText value="#{msg['user.label.sCharged']}"/>
+                    <h:inputText id="SCharged" value="#{user.user.SCharged}" title="#{msg['user.label.sCharged']}" />-->
+
+                    <!--<h:outputText value="#{msg['user.label.adicional']}"/>
+                    <h:inputText id="adicional" value="#{user.user.adicional}" title="#{msg['user.label.adicional']}" />-->
+
+                    <!--<h:outputLabel value="#{msg['user.label.codLanguage']}"/>
+                    <h:inputText id="codLanguage" value="#{user.user.codLanguage}" title="#{msg['user.label.codLanguage']}" />
+                    <h:selectOneMenu value="#{language.getAll}" id="newsletters">
+                        <a4j:support event="onchange" reRender="#{user.user.codLanguage}"/>
+                        <f:selectItems value="#{idLanguage}"/>
+                    </h:selectOneMenu>-->
+
+                    <h:outputText value="#{msg['user.label.sCpf']}"/>
+                    <h:inputText id="SCpf" value="#{user.user.SCpf}" title="#{msg['user.label.sCpf']}" disabled="#{user.neditable}"/>
+
+                    <h:outputText value="#{msg['user.label.sRg']}"/>
+                    <h:inputText id="SRg" value="#{user.user.SRg}" title="#{msg['user.label.sRg']}" disabled="#{user.neditable}"/>
+
+                    <!--<h:outputText value="#{msg['user.label.imgUser']}"/>
+                    <h:inputText id="imgUser" value="#{user.user.imgUser}" title="#{msg['user.label.imgUser']}" />-->
+
+                    <h:outputText value="#{msg['user.label.idBank']}"/>
+                    <!--<h:inputText id="idBank" value="#{user.user.idBank}" title="#{msg['user.label.idBank']}" />-->
+
+                    <rich:comboBox suggestionValues="#{user.allBank}"
+                                    directInputSuggestions="true" defaultLabel="Enter some value" 
+                                    value="#{user.descricaoBank}" onselect="user.idBank()" />
+
+                    <!--
+
+                    funciona mas traz o id
+                    <rich:comboBox selectFirstOnUpdate="false"
+                        defaultLabel="Enter some value">
+                        <f:selectItems value="#{user.allBank}" />
+                    </rich:comboBox>
+                    -->
+
+                    <!--
+                    funciona mas traz o id
+                    <rich:comboBox value="#{user.allBank}">  
+                        <f:selectItems value="#{user.allBank}"/>  
+                    </rich:comboBox>  -->
+
+                    <!--<h:outputLabel value="#{msg['user.label.dLastUpdate']}"/>-->
+                    <!--<h:inputText id="DLastUpdate" value="#{user.user.DLastUpdate}" title="DLastUpdate" >
+                        <f:convertDateTime type="DATE" pattern="MM/dd/yyyy" />
+                    </h:inputText>-->
+                    <!--<a4j:outputPanel id="DLastUpdate" layout="block">
+                        <rich:calendar value="#{user.user.DLastUpdate}"
+                            popup="true" datePattern="dd/M/yy"
+                            showApplyButton="true" cellWidth="24px" cellHeight="22px" style="width:200px" title="#{user.user.DLastUpdate}"/>
+                    </a4j:outputPanel>-->
+
+                    <!--<h:outputText value="#{msg['user.label.dDateUpdateSenha']}:"/>-->
+                    <!--<h:inputText id="DDateUpdateSenha" value="#{user.user.DDateUpdateSenha}" title="DDateUpdateSenha" >
+                        <f:convertDateTime type="DATE" pattern="MM/dd/yyyy" />
+                    </h:inputText>-->
+                    <!--<a4j:outputPanel id="DDateUpdateSenha" layout="block">
+                        <rich:calendar value="#{user.user.DDateUpdateSenha}"
+                            popup="true" datePattern="dd/M/yy"
+                            showApplyButton="true" cellWidth="24px" cellHeight="22px" style="width:200px" title="#{user.user.DDateUpdateSenha}"/>
+                    </a4j:outputPanel>-->
+
+
+                    <!--<h:outputText value="#{msg['user.label.lastLogin']}"/>-->
+                    <!--<h:inputText id="lastLogin" value="#{user.user.lastLogin}" title="LastLogin" required="true" requiredMessage="The lastLogin field is required." >
+                        <f:convertDateTime type="DATE" pattern="MM/dd/yyyy" />
+                    </h:inputText>-->
+                    <!--<a4j:outputPanel id="lastLogin" layout="block">
+                        <rich:calendar value="#{user.user.lastLogin}"
+                            popup="true" datePattern="MMM d, yyyy" showApplyButton="true" 
+                            cellWidth="24px" cellHeight="22px" style="width:200px" title="#{user.user.lastLogin}"/>
+                    </a4j:outputPanel>-->
+
+                    <!--
+                    <h:outputText value="#{msg['user.label.sEmail']}"/>
+                    <h:selectManyListbox id="skPhoneCollection" value="#{user.skPhoneCollectionOfuser}" title="SkPhoneCollection" size="6" >
+                        <f:selectItems value="#{skPhone.skPhonesAvailableSelectMany}"/>
+                    </h:selectManyListbox>
+
+                    <h:outputText value="#{msg['user.label.sEmail']}"/>
+                    <h:selectManyListbox id="skInvoiceCollection" value="#{user.skInvoiceCollectionOfuser}" title="SkInvoiceCollection" size="6" >
+                        <f:selectItems value="#{skInvoice.skInvoicesAvailableSelectMany}"/>
+                    </h:selectManyListbox>
+
+                    <h:outputText value="#{msg['user.label.sEmail']}"/>
+                    <h:selectManyListbox id="skAddressCollection" value="#{user.skAddressCollectionOfuser}" title="SkAddressCollection" size="6" >
+                        <f:selectItems value="#{skAddress.skAddresssAvailableSelectMany}"/>
+                    </h:selectManyListbox>
+
+                    <h:outputText value="#{msg['user.label.sEmail']}"/>
+                    <h:selectManyListbox id="skReceivingCollection" value="#{user.skReceivingCollectionOfuser}" title="SkReceivingCollection" size="6" >
+                        <f:selectItems value="#{skReceiving.skReceivingsAvailableSelectMany}"/>
+                    </h:selectManyListbox>-->
+
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+        
+    </ui:define>
+    
+    <ui:define name="buttons">
+        <h:commandButton value="#{msg['user.button.save']}" action="#{user.save}"></h:commandButton>
+        <h:commandButton value="#{msg['user.button.cancel']}" action="#{user.find}"></h:commandButton>
+    </ui:define>
+</ui:composition>    

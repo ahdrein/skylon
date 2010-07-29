@@ -1,0 +1,100 @@
+/* 
+    Document   : aquaStyle
+    Created on : 11/06/2008, 10:04:01
+    Author     : andrein
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+#geral {
+    width:100%;
+    border:1px solid gray;
+    margin:0 auto;
+}
+
+#cabecalho h1 {
+    /*background: green;  esse design  vai ficar show! :D */
+    padding:10px;
+    color:#FFF;
+}
+
+#esquerda {
+    width:197px;
+    /*background:purple;*/
+    padding:3px;
+    float:left;
+}
+
+#direita {
+    width:20%;
+    padding:3px;
+    float:right;
+}
+
+#conteudo {
+    /*background:lightgray;*/
+    width:100%;
+    margin:0 5px;
+}
+
+#rodape {
+    /* background: green;  esse design  vai ficar show! :D */
+    width:100%;
+    padding:10px;
+    text-align:center;
+    /*color:#FFF;*/
+    
+}
+#rodape a {color:#FFF;}
+
+
+.ecol1 { vertical-align: top; padding-right : 25px }
+.ecol2 { vertical-align: top; border-left: #ACBECE 1px solid; padding-left : 10px }
+.rich-calendar-tool-btn{
+    font-family: Arial, Verdana;
+} 
+
+/*
+ * CSS para montar box com sombra
+ */
+ 
+ .topo-dir {
+background: url(topo-dir.jpg) 100% 0 no-repeat; 
+width:25em;
+}
+.baixo-esq {
+background: url(baixo-esq.jpg) 0 100% no-repeat;
+}
+.baixo-dir {
+background: url(baixo-dir.jpg) 100% 100% no-repeat; 
+padding:0 27px 27px 0;
+}
+.texto {
+background:#ffc; 
+border:1px solid #333;
+}
+.texto h3 {
+text-align:center; 
+margin:0.5em 0; 
+}
+p {
+margin-bottom:0;
+font: 0.8em Georgia, "Times New Roman", Times, serif;
+padding:0 10px 10px; 
+text-align:justify; 
+}
